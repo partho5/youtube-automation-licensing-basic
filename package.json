@@ -4,5 +4,9 @@
   "private": true,
   "engines": {
     "node": ">=18"
+  },
+  "scripts": {
+    "build": "echo \"No build step required\"",
+    "dev": "vercel dev"
   }
 }
