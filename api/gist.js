@@ -12,7 +12,7 @@ function getConfig() {
   return {
     token: GITHUB_TOKEN,
     gistId: GIST_ID,
-    filename: GIST_FILENAME || "licenses.json",
+    filename: GIST_FILENAME || "yt-automation-tmp-licenses.json",
   };
 }
 
