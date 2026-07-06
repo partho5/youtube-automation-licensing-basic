@@ -7,6 +7,15 @@
 // Matches licensing.py's expectation: it compares the current UTC ISO
 // string against expireTime lexicographically, so expireTime must stay
 // in strict ISO-8601 UTC format ("...Z") for that comparison to be valid.
+// api/validate.js
+//
+// POST body:  { "license_key": "...", "machine_id": "..." }
+// Success:    { "licensedTo": "Name", "expireTime": "2026-12-31T23:59:59Z" }
+// Invalid:    { "licensedTo": null,   "expireTime": "2026-01-01T00:00:00Z" }
+//
+// Matches licensing.py's expectation: it compares the current UTC ISO
+// string against expireTime lexicographically, so expireTime must stay
+// in strict ISO-8601 UTC format ("...Z") for that comparison to be valid.
 
 const { getLicenses, saveLicenses } = require("./gist");
 
