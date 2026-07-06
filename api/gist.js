@@ -1,4 +1,4 @@
-// lib/gist.js
+// api/gist.js
 // Simple JSON "database" backed by a private GitHub Gist.
 // Reads and writes a single file (licenses.json) inside the gist.
 

@@ -3,5 +3,10 @@
     { "source": "/admin", "destination": "/api/admin.js" },
     { "source": "/gist", "destination": "/api/gist.js" },
     { "source": "/validate", "destination": "/api/validate.js" }
-  ]
+  ],
+  "functions": {
+    "api/*.js": {
+      "includeFiles": "api/**"
+    }
+  }
 }

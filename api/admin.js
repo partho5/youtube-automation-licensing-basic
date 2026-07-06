@@ -1,4 +1,4 @@
-// api/license/admin.js
+// api/admin.js
 //
 // Small helper endpoint so you don't have to hand-edit the gist.
 // Protect with header:  x-admin-secret: <ADMIN_SECRET>
@@ -12,7 +12,7 @@
 // List all keys (no secrets returned beyond what's already in the store):
 //   POST { "action": "list" }
 
-const { getLicenses, saveLicenses } = require("../../lib/gist");
+const { getLicenses, saveLicenses } = require("./gist");
 
 module.exports = async (req, res) => {
   if (req.method !== "POST") {

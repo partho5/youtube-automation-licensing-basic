@@ -1,4 +1,4 @@
-// api/license/validate.js
+// api/validate.js
 //
 // POST body:  { "license_key": "...", "machine_id": "..." }
 // Success:    { "licensedTo": "Name", "expireTime": "2026-12-31T23:59:59Z" }
